@@ -6,10 +6,8 @@
 
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
@@ -64,7 +62,7 @@
 	    						   "I am the number one human being in music. That means any person that's living or breathing is number two.",
 	    						   "I have to dress Kim everyday so she doesn&#39;t embarrass me.",
 	    						   "I&#39;m doing pretty good as far as geniuses go ... I&#39;m like a machine. I&#39;m a robot. You cannot offend a robot ... I&#39;m going down as a legend, whether or not you like me or not. I am the new Jim Morrison. I am the new Kurt Cobain ... The Bible had 20, 30, 40, 50 characters in it. You don&#39;t think that I would be one of the characters of today's modern Bible?",
-	    						   "I walk through the hotel and I walk down the street and people look at me like I'm f--king insane, like I&#39;m Hitler. One day the light will shine through, and one day people will understand everything I ever did.",
+	    						   "I walk through the hotel and I walk down the street and people look at me like I'm fucking insane, like I&#39;m Hitler. One day the light will shine through, and one day people will understand everything I ever did.",
 	    						   "My greatest pain in life is that I will never be able to see myself perform live.",
 	    						   "Kim doesn&#39;t understand what a blessing I am to her.",
 	    						   "I&#39;m like a tree. I feed the branches of the people.",
@@ -76,7 +74,8 @@
 	    //alert(random);
 	    // document.getElementById("quote").innerHTML=random;
 	    var quote = quotesArray[q];
-	    document.getElementById("quote").innerHTML=quote;
+	    document.getElementById("quote").innerHTML="&#8220;" + quote + "&#8221;";
+	    document.getElementById("kanye").innerHTML="&#8212; Kanye West";
 	    
 	    if (q == quotesArray.length - 1) {
 	    	q = 0; 
@@ -85,12 +84,12 @@
 	    }
 	}
 
-
 </script>
 
 <div class="container">
-	<input type="button" id="btnSearch" class="btn btn-primary btn-lg center-block margin-button" value="Get Quote" onclick="GetQuote();" />
+	<input type="button" id="btnSearch" class="btn btn-primary btn-lg center-block  margin-button" value="Get Quote" onclick="GetQuote();" />
 	<p id="quote" class="text-center margin">Everybody loves Kanye</p>
+	<p id="kanye" class="text-center margin"></p>
 </div>
 
 </body>
