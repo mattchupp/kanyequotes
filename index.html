@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kanye Quotes</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<style type="text/css">
+		body {
+			margin: 0;
+			width: 100%; 
+			height: 100%; 
+		}
+		.margin {
+			margin-top: 30px;
+		}
+		.margin-button {
+			margin-top: 100px;
+		}
+		p {
+			font-size: 25px;
+		}
+	</style>
+
+</head>
+<body>
+
+<script type="text/javascript">
+
+	var q = 0; 
+	
+	function GetQuote() {
+	    var quotesArray= new Array("I don&#39;t even listen to rap. My apartment is too nice to listen to rap in.", 
+	    						   "I feel like I&#39;m too busy writing history to read it.",
+	    						   "Would you believe in what you believe in if you were the only one who believed it?",
+	    						   "I am God&#39;s vessel. But my greatest pain in life is that I will never be able to see myself perform live.",
+	    						   "I am Warhol. I am the No. 1 most impactful artist of our generation. I am Shakespeare in the flesh.",
+	    						   "I'll say things that are serious and put them in a joke form so people can enjoy them. We laugh to keep from crying.",
+	    						   "Nobody can tell me where I can and can't go.",
+	    						   "I still think I am the greatest.",
+	    						   "Man, I&#39;m the No. 1 living and breathing rock star. I am Axl Rose; I am Jim Morrison; I am Jimi Hendrix.",
+	    						   "I know I got angels watchin me from the other side.",
+	    						   "I would never want a book&#39;s autograph. I am a proud non-reader of books.",
+	    						   "I don't know what&#39;s better gettin&#39; laid or gettin&#39; paid.",
+	    						   "I will go down as the voice of this generation, of this decade, I will be the loudest voice.",
+	    						   "I am not a fan of books.",
+	    						   "Sometimes people write novels and they just be so wordy and so self-absorbed.",
+	    						   "I really appreciate the moments that I was able to win rap album of the year or whatever.",
+	    						   "Taylor Swift beat Beyonc&#233; at the Grammys? Beyonc&#233; be dancing in heels and shit.",
+	    						   "I am the number one human being in music. That means any person that's living or breathing is number two.",
+	    						   "I have to dress Kim everyday so she doesn&#39;t embarrass me.",
+	    						   "I&#39;m doing pretty good as far as geniuses go ... I&#39;m like a machine. I&#39;m a robot. You cannot offend a robot ... I&#39;m going down as a legend, whether or not you like me or not. I am the new Jim Morrison. I am the new Kurt Cobain ... The Bible had 20, 30, 40, 50 characters in it. You don&#39;t think that I would be one of the characters of today's modern Bible?",
+	    						   "I walk through the hotel and I walk down the street and people look at me like I'm f--king insane, like I&#39;m Hitler. One day the light will shine through, and one day people will understand everything I ever did.",
+	    						   "My greatest pain in life is that I will never be able to see myself perform live.",
+	    						   "Kim doesn&#39;t understand what a blessing I am to her.",
+	    						   "I&#39;m like a tree. I feed the branches of the people.",
+	    						   "Yo Taylor, I'm really happy for you, I&#39;mma let you finish, but Beyonc&#233; has one of the best videos of all time. One of the best videos of all time!",
+	    						   "You may be talented, but you&#39;re not Kanye West.",
+	    						   "The media crucify me like they did Christ.",
+	    						   "I feel like there&#39;s still niggas that owe me checks. I feel like there&#39;s still bitches that owe me sex.");
+	    // var random = quotesArray[Math.floor(Math.random() * quotesArray.length)];
+	    //alert(random);
+	    // document.getElementById("quote").innerHTML=random;
+	    var quote = quotesArray[q];
+	    document.getElementById("quote").innerHTML=quote;
+	    
+	    if (q == quotesArray.length - 1) {
+	    	q = 0; 
+	    } else {
+	    	q++;
+	    }
+	}
+
+
+</script>
+
+<div class="container">
+	<input type="button" id="btnSearch" class="btn btn-primary btn-lg center-block margin-button" value="Get Quote" onclick="GetQuote();" />
+	<p id="quote" class="text-center margin">Everybody loves Kanye</p>
+</div>
+
+</body>
+</html>
+
